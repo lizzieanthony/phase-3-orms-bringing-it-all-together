@@ -128,6 +128,7 @@ describe Dog do
 
       dog_from_db = Dog.find(2)
 
+      dog_from_db.update(name: "Dan")
       expect(dog_from_db).to have_attributes(
         class: Dog,
         id: 2,
